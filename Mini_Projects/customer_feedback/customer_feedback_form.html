@@ -9,8 +9,45 @@
         <form>
             <h1> Customer Feedback Survey</h1>
             <p>Please take a moment to complete the survey below.</p>
-            Your Name: <input type="text"><br>
-
+            Your Name: <input type="text" required><br><br>
+            Your Age: <input type="number" required><br><br>
+            Fovurite color: <select>
+                <option> Blue </option>
+                <option>Green</option>
+                <option>Red</option>
+                <option>Yellow</option>
+                <option>Orange</option>
+            </select><br><br>
+            Your Feedback:<br><textarea rows="6" cols="30" required></textarea><br><br>
+            <button type="submit">Submit</button><br>
+            <p><big><b>Instruction:</b></big></p>
+            <ul type="solid-circle">
+                <li>Fill in your name and age in first two fields.</li>
+                <li>Select your favourite color from dropdown list.</li>
+                <li>Provide your feedback in textbox.</li>
+                <li>Click the "Submit" button to submit your responses.</li>
+            </ul>
+            <big><big><b>Survey Responses</b></big><br><br>
+                <table>
+                    <tr align="center">
+                        <td><b>Name</b></td>
+                        <td><b>Age</b></td>
+                        <td><b>Favourite Color</b></td>
+                        <td><b>Feedback</b></td>
+                    </tr>
+                    <tr>
+                        <td>Alice</td>
+                        <td>30</td>
+                        <td>Blue</td>
+                        <td>Great service! Keep it up.</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>25</td>
+                        <td>Green</td>
+                        <td>Would love to see more options.</td>
+                    </tr>
+                </table>
         </form>
     </body>
 
