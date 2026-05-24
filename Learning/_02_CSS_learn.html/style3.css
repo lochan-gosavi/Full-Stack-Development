@@ -1,0 +1,13 @@
+#one{
+    text-align: center;
+    text-transform: capitalize;
+}
+#two{
+    font-family: 'Times New Roman';
+}
+#out{
+    font-size: 25px;
+}
+#in{
+    font-size: 10px;
+}

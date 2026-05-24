@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bat Ball Stump</h1>
+    <button
+        onclick="console.log('You have chosen Batting!');
+    genCode();
+    if(compChoice === 'Ball'){
+        resultmsg = ('Computer Wins!');
+        score.lost++;
+    }
+    else if(compChoice === 'Bat'){
+        resultmsg = (`It's a Tie`);
+        score.tie++;
+    }
+    else{
+        resultmsg = ('Hurrah! You Win');
+        score.win++;
+    }
+    alert(`You have chosen Bat. Computer has chosen ` + compChoice + ` and ` + resultmsg + ` and overall score is ` + `Win : ` + score.win + ` Lost : ` + score.lost + ` Tie : ` + score.tie);">Bat</button>
+
+    <!-- ball alert -->
+    <button
+        onclick="console.log('You have chosen Ball!');
+    genCode();
+    if(compChoice === 'Ball'){
+        resultmsg = (`It's a Tie`);
+        score.tie++;
+    }
+    else if(compChoice === 'Bat'){
+        resultmsg = (`Computer Wins!`);
+        score.lost++;
+    }
+    else{
+        resultmsg = ('Hurrah! You Win');
+        score.win++;
+    }
+    alert(`You have chosen Ball. Computer has chosen ` + compChoice + ` and ` + resultmsg + ` and overall score is ` + `Win : ` + score.win + ` Lost : ` + score.lost + ` Tie : ` + score.tie);">Ball</button>
+
+    <!-- Stump alert -->
+    <button
+        onclick="console.log('You have choosen stump');
+    genCode();
+    if(compChoice === 'Stump'){                                                 
+        resultmsg = (`It's a Tie`);
+        score.tie++;
+    }
+    else if(compChoice === 'Ball'){
+        resultmsg = (`Computer Wins!`);
+        score.lost++;
+    }
+    else{
+        resultmsg = ('Hurrah! You Win');
+        score.win++;
+    }
+    alert(`You have chosen Ball. Computer has chosen ` + compChoice + ` and ` + resultmsg + ` and overall score is ` + `Win : ` + score.win + ` Lost : ` + score.lost + ` Tie : ` + score.tie);">Stump</button>
+    <script>
+        let compChoice;
+        let score = {
+            win: 0,
+            lost: 0,
+            tie: 0,
+        };
+        function genCode() {
+            let randomNo = Math.floor(Math.random() * 3);
+            compChoice;
+            if (randomNo > 0 && randomNo <= 1) {
+                compChoice = 'Bat';
+            }
+            else if (randomNo > 1 && randomNo <= 2) {
+                compChoice = 'Ball';
+            }
+            else {
+                compChoice = 'Stump';
+            }
+            const compmsg = (`Computer's choice is ` + compChoice);
+            let resultmsg;
+            console.log(score);
+        }
+    </script>
+</body>
+
+</html>

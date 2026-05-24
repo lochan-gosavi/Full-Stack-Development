@@ -1,0 +1,9 @@
+div {
+    height: 200px;
+    width: 400px;
+    background-image: url("ganpati.jpg");
+    background-size: cover;
+    background-color: blueviolet;
+    position: relative;
+    left: 80%;
+}

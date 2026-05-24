@@ -1,0 +1,51 @@
+p{
+    text-align :start;
+}
+#para1{
+    text-decoration : underline;
+}
+#para2{
+    text-decoration : overline;
+}
+#para3{
+    text-decoration : line-through;
+}
+a{
+    text-decoration :none;
+}
+#bold{
+    font-weight: bold;
+}
+#normal{
+    font-weight: 300;
+}
+#bolder{
+    font-weight: bolder;
+}
+#lighter{
+    font-weight: lighter;
+}
+#one{
+    font-family: arial;
+}
+#onee{
+    font-size: 30px;
+}
+#three{
+    font-size: 10px;
+}
+#four{
+    line-height:10px;
+}
+#five{
+    line-height:30px;
+}
+#six{
+    text-transform: uppercase;
+}
+#seven{
+    text-transform: lowercase;
+}
+#eight{
+    text-transform: capitalize;
+}
